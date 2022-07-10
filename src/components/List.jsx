@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import Movie from "./movie";
 function List() {
 	let [data, setData] = useState(null);
 
@@ -25,9 +26,11 @@ function List() {
 		fetchData();
 	}, []);
 	return (
-		<div>List of movies
+		<div className="movie-container">
 
-			{data && JSON.stringify(data)}
+			{data && (data).map((element) => {
+				return <Movie element={element} />;
+			})}
 		</div>
 	)
 }
