@@ -55,6 +55,7 @@
 	box-shadow: 0 1px 2px white;
 	margin-bottom: 13px;
 	background: deepskyblue;
+	word-wrap: break-word;
 }
 
 .movie-container {
