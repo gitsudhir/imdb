@@ -10,7 +10,7 @@ function List() {
 
 			var config = {
 				method: 'get',
-				url: 'https://backendapiurl.herokuapp.com/api',
+				url: 'https://backendapiurl.herokuapp.com/api/movie/list',
 			};
 
 			axios(config)
