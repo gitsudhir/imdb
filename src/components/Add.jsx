@@ -16,7 +16,7 @@ export default function Add(props) {
 		<div>
 			<form onSubmit={onSubmit}>
 				<label>
-					Name:
+					changed Name:
 					<input type="text" name="name" value={name} placeholder="Movie Name " required
 						onChange={(e) => setName(e.target.value)} />
 				</label>
